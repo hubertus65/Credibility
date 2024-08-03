@@ -502,13 +502,30 @@ is given in the next figure (from
 This section summarizes the changes that have been performed on the library.
 </p>
 
-<h4>Version 0.2.0 (2024-MM-DD)</h4>
+<h4>Version 0.2.0 (2024-06-13)</h4>
 <p>
 The following improvements have been realized.
 </p>
 <ul>
   <li>
-    German translation.
+    Functions defined in the protected section of record
+    <a href=\"modelica://Credibility.Table1D\">Table1D</a>
+    moved into package
+    <a href=\"modelica://Credibility.Utilities.Table1DScalings\">Utilities.Table1DScalings</a>.
+  </li>
+  <li>
+    <a href=\"modelica://Credibility.Table1D\">Table1D</a>: fix mismatching array size of
+    <code>uncertainty.table</code> in the function call
+    <a href=\"modelica://Credibility.Utilities.Table1DScalings.getTableLambdaByTolerance\">getTableLambdaByTolerance</a>().
+  </li>
+  <li>
+    Example
+    <a href=\"modelica://Credibility.Examples.SimpleControlledDriveNonlinear.SimpleControlledDrive_virtualMeasurement\">SimpleControlledDrive_virtualMeasurement</a>:
+    Use &quot;fixedLocalSeed&quot; for noise generators to always get reproducible results.
+  </li>
+  <li>
+    Enable multilingual descriptions and add German translation. See also Modelica Specification &ndash;
+    <a href=\"https://specification.modelica.org/maint/3.6/packages.html#multilingual-descriptions\">Multilingual Descriptions</a>.
   </li>
 </ul>
 
@@ -677,7 +694,7 @@ Germany
 
 <h4>Copyright</h4>
 <p>
-&copy; 2022, DLR Institut f&uuml;r Systemdynamik und Regelungstechnik
+&copy; 2022-2024, DLR Institut f&uuml;r Systemdynamik und Regelungstechnik
 <br>All rights reserved.
 </p>
 
